@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(83, 81, 81);
+            margin: 0px;
+        }
+        header {
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(216, 0, 47);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+        }
+        nav > a {
+            background-color: blue;
+            padding: 3px;
+            margin: 10px;
+            
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: tomato;
+        }
+
+        article > aside {
+            background-color: aqua;
+            text-align: right;
+        }
+        main {
+            margin: 10px;
+            background-color: white;
+            border-radius: 10px 20px 30px 40px;
+            
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        footer {
+            background-color: black;
+            color: aliceblue;
+            padding: 5px;
+            margin: 0px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Notícia de Maluco </h2>
+                <p>Notícia aqui: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore animi error facere repellat dignissimos, cum minus officiis tenetur sapiente hic vero iusto vel consequuntur quasi nobis est perferendis nulla nemo.</p>
+                <aside>
+                    <p>Artigo escrito por MIlau</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Notícias do Cara Mal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aliquam vero rem unde, quam fugiat maiores ab sed similique, cum quidem veniam eum modi magni perferendis. Voluptatem doloribus ipsam distinctio?</p>
+                <aside>
+                    <p>Artigo escrito por:</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Mikael</p>
+    </footer>
+</body>
+</html>
