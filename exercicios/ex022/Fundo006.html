@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo Fixo de Tela</title>
-
+    <title>Alinhamento vertical</title>
     <style>
         body {
-            height: 100vh;
-            background-color: black;
-            background-image: url("https://gustavoguanabara.github.io/html-css/imagens/mascote.png");
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: cover; 
+            background-color: wheat;
         }
 
-        main {
-            background-color: white;
-            padding: 10px;
-            margin: auto;
+        #conteudo {
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            height: 200px;
             width: 400px;
-            border: 1px solid darkblue;
-            border-radius: 15px;
+            background-color: yellow;
+
+            /*A PARTIR DO MOMENTO EM QUE VOCE COLOCA ABSOLUTE, É POSSÍVEL USAR LEFT E TOP*/
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
         }
-        
+
+        #container {
+            background-image: url(images/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: aqua;
+
+        }
     </style>
 </head>
 <body>
-    <main>
-        <h1>Teste de Imagem de Fundo</h1>
+    <section id="container">
+        <article id="conteudo">
 
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas cumque tenetur iste expedita hic quibusdam nihil iusto maxime aliquid quod recusandae aperiam similique eaque necessitatibus optio enim, veniam id quasi. </p>
-    </main>
+        </article>
+    </section>
     
-
 </body>
 </html>
